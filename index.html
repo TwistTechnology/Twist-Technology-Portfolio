@@ -5,6 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+          (function()
+          {
+            emailjs.init("OoKGNHG5dC0sViGdc");
+          })();
+
+          
+        </script>
+
   <title>TwistTech - Smart Ideas for your Brand are Here</title>
 
   <!-- 
@@ -73,7 +85,7 @@
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>Blog</a>
+            <a href="#section faq" class="navbar-link" data-nav-link>FAQ's</a>
           </li>
 
           <li>
@@ -124,7 +136,7 @@
             <div class="btn-group">
               <a href="#services" class="btn btn-primary">Explore Our Services</a>
       
-              <button class="flex-btn">
+              <button class="flex-btn" id="whatsappBtn" onclick="goToWhatsApp()">
                 <div class="btn-icon">
                   <img src="assets/images/whatsapp.svg" aria-hidden="true"></img>
                 </div>
@@ -183,7 +195,7 @@
           </ul>
           
             <div class="btn-group">
-              <a href="#" class="btn btn-primary">Know More</a>
+              <a href="#" id = "whatsappBtn" class="btn btn-primary" onclick="goToWhatsApp()">Know More</a>
 
               <button class="flex-btn">
                 <div class="btn-icon">
@@ -236,8 +248,8 @@
                     Unlock the web's power with our versatile solutions, starting at just 2000 INR.
                   </p>
 
-                  <a href="#" class="btn-link">
-                    <span class="span">Read More</span>
+                  <a href="#" class="btn-link" id = "whatsappBtn" onclick="goToWhatsApp()">
+                    <span class="span">Know More</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                   </a>
@@ -263,8 +275,8 @@
                     Unlock the Aap's power with our versatile solutions, starting at just 3000 INR.
                   </p>
 
-                  <a href="#" class="btn-link">
-                    <span class="span">Read More</span>
+                  <a href="#" class="btn-link" id = "whatsappBtn" onclick="goToWhatsApp()">
+                    <span class="span">Know More</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                   </a>
@@ -290,8 +302,8 @@
                     "We offer web development training in technologies like React, Angular, starting at 2000 INR for students and professionals.
                   </p>
 
-                  <a href="#" class="btn-link">
-                    <span class="span">Read More</span>
+                  <a href="#" class="btn-link" id = "whatsappBtn" onclick="goToWhatsApp()">
+                    <span class="span">Know More</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                   </a>
@@ -317,8 +329,8 @@
                     Get full-stack developer training in Java, Angular, MongoDB, MySQL, etc., starting at 2000 INR for students and professionals.
                   </p>
 
-                  <a href="#" class="btn-link">
-                    <span class="span">Read More</span>
+                  <a href="#" class="btn-link" id = "whatsappBtn" onclick="goToWhatsApp()">
+                    <span class="span">Know More</span>
 
                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                   </a>
@@ -330,7 +342,7 @@
 
           </ul>
 
-          <a href="#" class="btn btn-primary">Get Started</a>
+          <a href="#" class="btn btn-primary" onclick="goToWhatsApp()">Get Started</a>
 
         </div>
       </section>
@@ -433,7 +445,7 @@
                 <h3 class="h3 card-title">Very Reasonable Price</h3>
 
                 <p class="card-text">
-                  All this at very reasonable prices.                </p>
+                  All this at very reasonable prices.</p>
               </div>
             </li>
 
@@ -450,13 +462,13 @@
         - #FAQ
       -->
 
-      <section class="section faq" aria-label="frequently asked questions">
+      <section class="section faq" id="section faq" aria-label="frequently asked questions">
         <div class="container">
 
           <div class="title-wrapper">
             <h2 class="h2 section-title">Discover Frequently Asked Questions?</h2>
 
-            <a href="#" class="btn btn-primary">Work Together</a>
+            <a href="#" class="btn btn-primary" onclick="goToWhatsApp()">Work Together</a>
           </div>
 
           <ul class="grid-list">
@@ -466,7 +478,7 @@
 
                 <button class="card-action" data-accordion-action>
                   <h3 class="h3 card-title">
-                    01. Curious about how to build your own UX strategy? Here are five simple steps.
+                    01. What technologies do you utilize in your software development process?
                   </h3>
 
                   <div class="action-icon">
@@ -477,15 +489,7 @@
 
                 <div class="card-content">
                   <p>
-                    Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed varius, diam vitae
-                    posuere semper, libero ex
-                    hendrerit nunc, ac sagittis eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit
-                    amet condimentum
-                    erat. Pellentesque ultrices sagittis turpis, quis tempus ante viverra et.Morbi aliquam quis quam in
-                    luctus. Nullam
-                    tincidunt pulvinar imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar imperdiet.
-                    Sed varius, diam
-                    vitae posuere semper.
+                    We leverage a wide range of cutting-edge technologies including but not limited to Python, JavaScript, React, Angular, Node.js, MongoDB, MySQL, and more. Our diverse tech stack ensures robust, scalable, and future-proof solutions.
                   </p>
                 </div>
 
@@ -497,7 +501,7 @@
 
                 <button class="card-action" data-accordion-action>
                   <h3 class="h3 card-title">
-                    02. Where Could a Career in UX Take You? Agency vs. In-House vs. Freelance?
+                    02. How long does it typically take to deliver a product?
                   </h3>
 
                   <div class="action-icon">
@@ -508,15 +512,7 @@
 
                 <div class="card-content">
                   <p>
-                    Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed varius, diam vitae
-                    posuere semper, libero ex
-                    hendrerit nunc, ac sagittis eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit
-                    amet condimentum
-                    erat. Pellentesque ultrices sagittis turpis, quis tempus ante viverra et.Morbi aliquam quis quam in
-                    luctus. Nullam
-                    tincidunt pulvinar imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar imperdiet.
-                    Sed varius, diam
-                    vitae posuere semper.
+                    The delivery time for a product can vary depending on its complexity and scope. However, we strive to ensure timely delivery and typically provide an estimated timeline during the initial consultation phase.
                   </p>
                 </div>
 
@@ -528,7 +524,7 @@
 
                 <button class="card-action" data-accordion-action>
                   <h3 class="h3 card-title">
-                    03. What Is a Problem Statement in UX? (And How To Write One?
+                    03. What payment methods do you accept for your services?
                   </h3>
 
                   <div class="action-icon">
@@ -539,15 +535,7 @@
 
                 <div class="card-content">
                   <p>
-                    Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed varius, diam vitae
-                    posuere semper, libero ex
-                    hendrerit nunc, ac sagittis eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit
-                    amet condimentum
-                    erat. Pellentesque ultrices sagittis turpis, quis tempus ante viverra et.Morbi aliquam quis quam in
-                    luctus. Nullam
-                    tincidunt pulvinar imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar imperdiet.
-                    Sed varius, diam
-                    vitae posuere semper.
+                    We accept various payment methods including bank transfers, credit/debit cards, and online payment platforms for the convenience of our clients. Our payment process is secure, transparent, and hassle-free.
                   </p>
                 </div>
 
@@ -559,7 +547,7 @@
 
                 <button class="card-action" data-accordion-action>
                   <h3 class="h3 card-title">
-                    04. There are several techniques UX designers employ to arrive at a succinct?
+                    04. Can you elaborate on your customer service offerings?
                   </h3>
 
                   <div class="action-icon">
@@ -570,15 +558,7 @@
 
                 <div class="card-content">
                   <p>
-                    Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed varius, diam vitae
-                    posuere semper, libero ex
-                    hendrerit nunc, ac sagittis eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit
-                    amet condimentum
-                    erat. Pellentesque ultrices sagittis turpis, quis tempus ante viverra et.Morbi aliquam quis quam in
-                    luctus. Nullam
-                    tincidunt pulvinar imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar imperdiet.
-                    Sed varius, diam
-                    vitae posuere semper.
+                    Our dedicated customer service team is available to assist you throughout the development process and beyond. We offer prompt responses to inquiries, regular project updates, and personalized support to ensure a seamless experience for our clients.
                   </p>
                 </div>
 
@@ -590,7 +570,7 @@
 
                 <button class="card-action" data-accordion-action>
                   <h3 class="h3 card-title">
-                    05. What are the obstacles users are facing? What are they trying to do?
+                    05. Do you offer any post-delivery support or maintenance services for your products?
                   </h3>
 
                   <div class="action-icon">
@@ -601,15 +581,7 @@
 
                 <div class="card-content">
                   <p>
-                    Morbi aliquam quis quam in luctus. Nullam tincidunt pulvinar imperdiet. Sed varius, diam vitae
-                    posuere semper, libero ex
-                    hendrerit nunc, ac sagittis eros metus ut diam. Donec a nibh in libero maximus vehicula. Etiam sit
-                    amet condimentum
-                    erat. Pellentesque ultrices sagittis turpis, quis tempus ante viverra et.Morbi aliquam quis quam in
-                    luctus. Nullam
-                    tincidunt pulvinar imperdiet. Sed varius, diam vitae posuere semper, tincidunt pulvinar imperdiet.
-                    Sed varius, diam
-                    vitae posuere semper.
+                    Yes, we provide post-delivery support and maintenance services to address any issues or updates required after the product launch. Our goal is to ensure the continued functionality, performance, and security of your software solution.
                   </p>
                 </div>
 
@@ -639,16 +611,15 @@
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">Hoolix</a>
+          <a href="#" class="logo">TwistTech</a>
 
           <p class="footer-text">
-            Lorem ipsum dolor sit amet consecte tur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
-          </p>
+            Empower your IT journey! Share your email to unlock a world of cutting-edge solutions and seamless service.          </p>
 
           <form action="" class="newsletter-form">
-            <input type="email" name="email_address" placeholder="Enter your email" required class="email-field">
+            <input type="email" name="email-field" id="email-field"  placeholder="Enter your email" required class="email-field">
 
-            <button type="submit" class="form-btn">
+            <button type="submit" class="form-btn" onclick="sendMail()">
               <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
             </button>
           </form>
@@ -662,27 +633,28 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Strategy & Research</a>
+            <a href="#services" class="footer-link">Strategy & Research</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Web Development</a>
+            <a href="#services" class="footer-link">Digital Merketing</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Web Solution</a>
+            <a href="#services" class="footer-link">Web Development</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Digital Merketing</a>
+            <a href="#services" class="footer-link">Application Development</a>
           </li>
 
-          <li>
-            <a href="#" class="footer-link">App Design</a>
-          </li>
 
           <li>
-            <a href="#" class="footer-link">App Development</a>
+            <a href="#services" class="footer-link">Web Development Training</a>
+          </li>
+            
+          <li>
+            <a href="#services" class="footer-link">Java Full Stack Training</a>
           </li>
 
         </ul>
@@ -729,20 +701,20 @@
             <ion-icon name="location" aria-hidden="true"></ion-icon>
 
             <address class="contact-link address">
-              4517 Washington Ave. Manchester, Kentucky 39495
+              2nd Floor, Mangalwari complex 2, Sadar Nagpur 440014
             </address>
           </li>
 
           <li class="footer-item">
             <ion-icon name="call" aria-hidden="true"></ion-icon>
 
-            <a href="tel:+7894631546876" class="contact-link">+7894631546876</a>
+            <a href="tel:9284347288" class="contact-link">9284347288</a>
           </li>
 
           <li class="footer-item">
             <ion-icon name="mail" aria-hidden="true"></ion-icon>
 
-            <a href="mailto:info@hoolix.com" class="contact-link">info@hoolix.com</a>
+            <a href="mailto:twisttechnology1969@gmail.com" class="contact-link">twisttechnology1969@gmail.com</a>
           </li>
 
           <li class="footer-item">
@@ -784,7 +756,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2022 Hoolix | All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+          &copy; 2024 TwistTech | All Rights Reserved by <a href="#" class="copyright-link">Twist Technology</a>
         </p>
 
         <ul class="footer-bottom-list">

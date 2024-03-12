@@ -74,3 +74,40 @@ const accordionAction = document.querySelectorAll("[data-accordion-action]");
 const toggleAccordion = function () { this.classList.toggle("active"); }
 
 addEventOnElem(accordionAction, "click", toggleAccordion);
+
+
+//adding whats app button
+
+function goToWhatsApp()
+{
+  console.log("Method Hit");
+  // var clickWhatsApp = document.getElementById("whatsappBtn").addEventListener("click" , ()=>
+  // {
+    window.open("https://wa.link/cs64if", "_blank");
+  // });
+  
+}
+
+
+function sendMail()
+{
+  console.log("Method Hit")
+
+  var str,
+element = document.getElementById('email-field');
+if (element != null) {
+    str = element.value;
+}
+else {
+    str = null;
+}
+  var params = 
+  {
+    from_name : "twisttechnology1969@gmail.com",
+    email_id : str
+  }
+  emailjs.send("service_1kotala","twist_tech_template",params).then(function(res)
+  {
+    alert("Success!! "+res.status);
+  })
+}
