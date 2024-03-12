@@ -111,3 +111,10 @@ else {
     alert("Success!! "+res.status);
   })
 }
+
+
+gotoMapLocation()
+{
+  var link = "https://www.google.com/maps/dir/21.1458004,79.0881546/Mangalwari+Complex+2,+Koradi+Colony,+Nagpur,+Maharashtra+440001/@21.1548255,79.0770722,17z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bd4c0e19cacffa9:0x5d8706b179c77c6b!2m2!1d79.0821142!2d21.1655566?entry=ttu";
+  window.open(link, "_blank");
+}
